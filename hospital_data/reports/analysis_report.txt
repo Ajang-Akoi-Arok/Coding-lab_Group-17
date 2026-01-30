@@ -1,0 +1,47 @@
+=========================================
+Analysis Report - 2026-01-30 18:49:28
+=========================================
+Log File: Heart Rate (heart_rate.log)
+Analysis Date: 2026-01-30 18:49:28
+
+Device analysis for Heart Rate log:
+=========================================
+
+Total log entries:        0
+
+=========================================
+Analysis Report - 2026-01-30 18:55:57
+=========================================
+Log File: Heart Rate (heart_rate.log)
+Analysis Date: 2026-01-30 18:55:57
+
+
+Total log entries: 0
+
+=========================================
+Analysis Report - 2026-01-30 18:56:54
+=========================================
+Log File: Heart Rate (heart_rate.log)
+Analysis Date: 2026-01-30 18:56:54
+
+Device analysis for Heart Rate log:
+=========================================
+10:30:00: 1 entries (First: 2024-06-18 10:30:00, Last: 2024-06-18 10:30:00)
+10:31:00: 1 entries (First: 2024-06-18 10:31:00, Last: 2024-06-18 10:31:00)
+10:32:00: 1 entries (First: 2024-06-18 10:32:00, Last: 2024-06-18 10:32:00)
+
+Total log entries:        3
+
+=========================================
+Analysis Report - 2026-01-30 19:01:47
+=========================================
+Log File: Heart Rate (heart_rate.log)
+Analysis Date: 2026-01-30 19:01:47
+
+Device analysis for Heart Rate log:
+=========================================
+HeartRate_Monitor_A: 2 entries (First: 2024-06-18 10:30:00, Last: 2024-06-18 10:32:00)
+HeartRate_Monitor_B: 1 entries (First: 2024-06-18 10:31:00, Last: 2024-06-18 10:31:00)
+
+Total log entries:        3
+
