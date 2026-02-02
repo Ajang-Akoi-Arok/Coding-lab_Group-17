@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import random
 import time
 import sys
@@ -7,9 +6,9 @@ from datetime import datetime
 
 # Directory and file configuration
 LOG_DIR = "active_logs"
-LOG_FILE = os.path.join(LOG_DIR, "heart_rate_log.log")
-PID_FILE = "/tmp/heart_rate_monitor.pid"
-DEVICES = ["HeartRate_Monitor_A", "HeartRate_Monitor_B"]
+LOG_FILE = os.path.join(LOG_DIR,"water_usage_log.log")
+PID_FILE = "/tmp/water_consumption.pid"
+DEVICE = "Water_Consumption_Meter"
 
 def ensure_log_dir():
     if not os.path.exists(LOG_DIR):
@@ -19,10 +18,9 @@ def log_data():
     ensure_log_dir()
     while True:
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        for device in DEVICES:
-            heart_rate = random.randint(60, 100)
-            with open(LOG_FILE, "a") as f:
-                f.write(f"{timestamp} {device} {heart_rate}\n")
+        usage = random.randint(1, 10)
+        with open(LOG_FILE, "a") as f:
+            f.write(f"{timestamp} {DEVICE} {usage}\n")
         time.sleep(1)
 
 def start():
@@ -46,7 +44,7 @@ def stop():
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python3 heart_rate_monitor.py [start|stop]")
+        print("Usage: python3 water_consumption.py [start|stop]")
         sys.exit(1)
     
     if sys.argv[1] == "start":
@@ -55,5 +53,3 @@ if __name__ == "__main__":
         stop()
     else:
         print("Invalid command. Use 'start' or 'stop'.")
-
-
